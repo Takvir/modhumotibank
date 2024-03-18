@@ -100,30 +100,4 @@ body {
   animation: blink 3s infinite;
 }
 
-.star {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 80px solid #ffec0a; /* Star color */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333; /* Text color */
-  font-size: 24px;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-}
 
-.star:before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  border-top: 65px solid #ffec0a; /* Star color */
-  position: absolute;
-  top: 10px;
-  left: -45px;
-}
