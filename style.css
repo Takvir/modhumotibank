@@ -61,34 +61,10 @@ body {
 
 
 
-/* .blinking-button {
-  animation: blink 1s infinite;
-  border: none;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-  height: 36px;
-  border-radius: 50px 32px;
-  font-weight: bold;
-} */
 
-/* Add this CSS to your stylesheet */
 
-@keyframes scroll {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 
-}
 
-.scroll-text {
-  animation: scroll 10s linear infinite;
-  white-space: nowrap;
-}
 
 @keyframes blink {
   0% { opacity: 0; }
@@ -99,6 +75,22 @@ body {
 .blink {
   animation: blink 3s infinite;
 }
+
+
+@keyframes blink-bg {
+  0%, 100% {background-color:#deffd8;}
+  50% {background-color: #8EDDBE;}
+}
+
+.blink-bg {
+  animation: blink-bg 1s linear infinite;
+  border-radius: 48px 0px; 
+  border: 0px solid #6C8003;
+}
+
+
+
+
 
 .stats-container {
   display: flex;
