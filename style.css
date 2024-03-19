@@ -88,6 +88,11 @@ body {
   /* border: 0px solid #6C8003; */
 }
 
+/* Assuming the 'white' class is defined as follows in your Tailwind CSS configuration */
+.white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
 
 
 @keyframes scroll {
