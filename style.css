@@ -78,14 +78,31 @@ body {
 
 
 @keyframes blink-bg {
-  0%, 100% {background-color:#deffd8;}
-  50% {background-color: #8EDDBE;}
+  0%, 100% {background-color:#0a8e59;}
+  50% {background-color: #46c692;}
 }
 
 .blink-bg {
   animation: blink-bg 1s linear infinite;
-  border-radius: 48px 0px; 
-  border: 0px solid #6C8003;
+  border-radius: 30px 4px;
+  /* border: 0px solid #6C8003; */
+}
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+.scroll-text {
+  animation: scroll 10s linear infinite;
+  white-space: nowrap;
 }
 
 
