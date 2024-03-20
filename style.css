@@ -1,6 +1,6 @@
 .container {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .hero-list {
@@ -60,16 +60,40 @@ body {
 }
 
 
-
-
-
-
-
-
 @keyframes blink {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 33, 4, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.highlight-link:hover {
+  animation: blink 1s infinite; /* Adjust animation duration as needed */
+}
+
+
+
+
+
+
+/* @keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+/* Apply the blinking animation */
+.animate-blink {
+  animation: blink 2s infinite;
+}
+
+.animate-border {
+  animation: blink 2s infinite;
 }
 
 .blink {
@@ -77,10 +101,10 @@ body {
 }
 
 
-@keyframes blink-bg {
+/* @keyframes blink-bg {
   0%, 100% {background-color:#0a8e59;}
   50% {background-color: #46c692;}
-}
+} */
 
 .blink-bg {
   animation: blink-bg 1s linear infinite;
@@ -145,4 +169,27 @@ body {
   font-weight: bold;
   color: #333;
 }
+
+.arrow {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  /* border-right: 8px solid black; */ /* Adjust color and size as needed */
+  border-left: 15px solid;
+  display: inline-block;
+  margin-right: 5px; /* Adjust spacing as needed */
+}
+
 
