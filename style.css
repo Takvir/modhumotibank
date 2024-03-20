@@ -89,15 +89,15 @@ body {
 
 /* Apply the blinking animation */
 .animate-blink {
-  animation: blink 2s infinite;
+  animation: blink 1s infinite;
 }
 
 .animate-border {
-  animation: blink 2s infinite;
+  animation: blink 1s infinite;
 }
 
 .blink {
-  animation: blink 3s infinite;
+  animation: blink 1s infinite;
 }
 
 
