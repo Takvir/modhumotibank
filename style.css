@@ -61,18 +61,7 @@ body {
 }
 
 
-@keyframes blink {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 33, 4, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
-  }
-  
-}
+
 
 /* .highlight-link:hover {
   animation: blink 1s infinite; 
@@ -90,13 +79,21 @@ body {
 } */
 
 /* Apply the blinking animation */
-.animate-blink {
-  animation: blink 1s infinite;
+
+
+.blink-red-border {
+  animation: blink-border 1s infinite alternate;
+  border: 3px solid transparent; /* Set initial border */
 }
 
-
-
-
+@keyframes blink-border {
+  0% {
+      border-color: transparent; /* Start with transparent border */
+  }
+  100% {
+      border-color: red; /* End with red border */
+  }
+}
 
 
 
