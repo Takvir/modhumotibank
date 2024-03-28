@@ -6,7 +6,7 @@
 
 
 .hero-list {
-  background-image: url('./Image/Background.JPG'); 
+  background-image: url('./Image/herobg.jpg'); 
   background-size: cover; 
   background-position: center; 
   width: 100%;
@@ -16,16 +16,7 @@
   justify-content: center;
 }
 
-.hero-list1 {
-  background-image: url('./Image/line.JPG'); 
-  background-size: cover; 
-  background-position: center; 
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 body {
   font-family: Arial, sans-serif;
