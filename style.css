@@ -179,15 +179,21 @@ body {
   /* Add any other styling for the icon */
 }
 
-.footer {
+/* .footer {
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
+} */
+ 
+.footer-item{
+  position: absolute;
+  bottom: 0; width: 100%;
 }
 
+
 @media screen and (max-width: 768px) {
-  .footer {
+  .footer-item {
     position: relative; /* Change to relative positioning on smaller screens */
   }
 }
