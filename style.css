@@ -1,3 +1,5 @@
+
+
 .container-item {
   width: 94%;
   margin: 0 auto;
@@ -167,13 +169,15 @@ body {
 }
 
 .footer-item{
-  position: absolute;
+  position: fixed;
   
   bottom: 0;
   width: 100%;
+  background-color: #374151; /* Example background color */
+  color: white; /* Example text color */
+  padding: 1rem;
   
 }
-
 
 
 
